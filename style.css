@@ -1,0 +1,455 @@
+img{
+    width:100%;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:#1A1A1D;
+    color: #D9C2D1;
+}
+#header{
+     width: 100%;
+     height: 100vh;
+     background-image: url(img/photo_2024-11-13_16-37-20.jpg);
+     background-size: cover;
+     background-position: center;
+     
+     color: #D9C2D1;
+}
+.container{
+    padding: 10px 10%;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:#D9C2D1;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FFD700;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5sec;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 20px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 40px;
+}
+.header-text h1 span{
+    color: #FFD700 ;
+} 
+/*------about-----*/
+#about{
+    padding: 80px 0;
+    color:#D9C2D1 ;
+    text-align: center;
+    padding-left: -900px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+    height: 50%;
+
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #FFD700;
+    text-align: center;
+    margin-top:-10px;
+    padding-left: -700px;
+
+}
+
+
+/*-------------------services---------------*/
+
+#services{
+    padding: 30px 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background:#3B1C32;
+}
+.services-list{
+  display:inline-block; /* Makes the container a flexbox */
+  gap: 100px; /* Adds spacing between the items */
+  margin-top: -20px; /* Adds space at the top */
+}
+.hb{
+    color:#FFD700
+
+    
+
+}
+.km{
+    font-size: 0.9em;
+    margin-top:-10px;
+    margin-bottom: 100px;
+    padding-bottom: 40px;
+    padding-left: -20px;
+    display: flex;
+    gap: 200px;
+    width: 100%;
+
+}
+.km,.kn{
+    width: 33%;
+}
+#po{
+    padding-left: -700px;
+}
+#kl{
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 100px;
+    margin-top:10px;
+    width: 100%;
+}
+
+/*------------------missions-----------------------------*/
+#m{
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 30px;
+    background:#6A1E55;
+    color: #FFD700;
+    padding-bottom: 5px;
+}
+#mission {
+    padding: 40px;
+    margin: -40px auto;
+    max-width: 9000px;
+    border-radius: 0px;
+    background:#6A1E55;
+    display: flex;
+}
+
+#mission h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #FFD700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    background:#6A1E55;
+}
+
+#mission p {
+    font-size: 1.1em;
+    color:#D9C2D1;
+    text-align: justify;
+    background:#6A1E55;
+    
+}
+
+/* Goals Section */
+#goals {
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 9000px;
+    display: flex;
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background:#6A1E55;
+}
+
+#goals h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #FFD700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    background:#6A1E55;
+}
+
+#goals ul {
+    padding-left: 20px;
+    list-style-type: none;
+    background:#6A1E55;
+}
+
+#goals li {
+    font-size: 1.1em;
+    color: #D9C2D1;
+    margin-bottom: 15px;
+    position: relative;
+    background:#6A1E55;
+}
+
+#goals li:before {
+    content: "•";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    color:#D9C2D1;
+    font-size: 1.5em;
+    background:#6A1E55;
+}
+.full-line {
+    border: none;
+    
+    margin: 50px 0;
+    width: 100%;
+}
+/*--------------------------contacts-----------------------------------------------------*/
+
+
+/* Contact Section Styling */
+.contact {
+    max-width: 900  0px;
+    margin: 8px auto;
+    padding: 30;
+    border: none;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background:#A64D79;
+    margin-top: -100px;
+    margin-bottom: 10px;
+}
+
+.contact-title {
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #FFD700;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.contact-description {
+    font-size: 1.1em;
+    color: #D9C2D1;
+    margin-bottom: 30px;
+}
+
+/* Contact Details Styling */
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-align: center; /* Centers content within each contact item */
+}
+
+.contact-item {
+    flex: 1 1 calc(50% - 20px); /* Two items per row on larger screens */
+    max-width: 350px;
+    margin-bottom: 80px;
+}
+
+.contact-item h3 {
+    font-size: 1.3em;
+    color: #FFD700;
+    margin-bottom: 5px;
+    
+    padding-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.contact-item p {
+    font-size: 1em;
+    color: #D9C2D1;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.contact-item a {
+    color: #D9C2D1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.contact-item a:hover {
+    color:#D9C2D1;
+    text-decoration: underline;
+}
+
+/* Full-Width Line Styling */
+.full-width-line {
+    border: none;
+    margin: 80px 0;
+    width: 100%;
+    opacity: 0.8;
+}
+/*--------footer-------*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #D9C2D1;
+    margin-top: -80px;
+    background:#A64D79;
+}
+/*----------------------css for small screen-------*/
+/* Mobile-Responsive Styles */
+@media (max-width: 768px) {
+
+    /* Header Section Adjustments */
+    #header {
+        height: 70vh; /* Adjust height for smaller screens */
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Adjust container padding for small screens */
+    .container {
+        padding: 10px 5%; /* Reduce padding to fit on small screens */
+    }
+
+    /* Navigation Adjustments */
+    nav {
+        flex-direction: column;
+        align-items: flex-start; /* Stack navigation items */
+    }
+
+    .logo {
+        width: 100px; /* Adjust logo size */
+        height: 80px;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Stack the nav items with less space */
+    }
+
+    /* Header Text Adjustments */
+    .header-text h1 {
+        font-size: 2.5em; /* Reduce font size for smaller screens */
+    }
+
+    /* About Section Adjustments */
+    #about .row {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .about-col-1 {
+        flex-basis: 100%; /* Full width for the first column */
+        height: auto; /* Adjust height */
+    }
+
+    .about-col-2 {
+        flex-basis: 100%; /* Full width for the second column */
+    }
+
+    .sub-title {
+        font-size: 2.5em; /* Adjust title size */
+    }
+
+    /* Services Section Adjustments */
+    #services .services-list {
+        flex-direction: column; /* Stack services vertically */
+        gap: 20px;
+    }
+
+    /* Mission and Goals Section Adjustments */
+    #mission, #goals {
+        padding: 20px; /* Reduce padding */
+        margin: 20px auto; /* Adjust margins for mobile */
+        max-width: 100%;
+    }
+
+    #mission h2, #goals h2 {
+        font-size: 2em; /* Reduce title size */
+    }
+
+    #mission p, #goals p {
+        font-size: 1em; /* Adjust text size */
+    }
+
+    #goals ul {
+        padding-left: 10px; /* Adjust padding for lists */
+    }
+
+    /* Full Line Adjustments */
+    .full-line {
+        width: 100%;
+        margin: 30px 0; /* Reduce spacing */
+    }
+
+    /* Contact Section Adjustments */
+    .contact {
+        max-width: 100%; /* Ensure contact section fits small screens */
+        padding: 10px;
+    }
+
+    .contact-title {
+        font-size: 1.8em; /* Adjust title size */
+    }
+
+    .contact-description {
+        font-size: 1em; /* Adjust description size */
+    }
+
+    .contact-details {
+        flex-direction: column; /* Stack contact details vertically */
+    }
+
+    .contact-item {
+        flex: 1 1 100%; /* Stack contact items */
+        max-width: 100%; /* Ensure contact items take full width */
+    }
+
+    .contact-item h3 {
+        font-size: 1.2em; /* Adjust heading size */
+    }
+
+    /* Footer Adjustments */
+    footer {
+        font-size: 0.8em; /* Adjust font size for footer */
+        padding: 15px;
+    }
+
+    /* Ensure elements like images are responsive */
+    img, video {
+        max-width: 100%; /* Make images responsive */
+        height: auto;
+    }
+
+    /* Ensure all buttons take full width on smaller screens */
+    .button, .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
